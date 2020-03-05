@@ -16,6 +16,9 @@ task = resolutionwr.ResolutionWR(
         data_directory=data_directory,
         number_of_blocks=5,
         trials_per_set_size=5,
+        experiment_name='ResolutionWR',
+        data_fields=resolutionwr.data_fields,
+        monitor_distance=90
     )
 
 
