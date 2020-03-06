@@ -27,7 +27,7 @@ def init_tracker(self):
     self.tracker = eyelinker.EyeLinker(
         self.experiment_window,
         'RWR' + self.experiment_info['Subject Number'] + '_' +
-        self.experiment_info['Session'] + '.edf',
+        str(self.experiment_info['Session']) + '.edf',
         'BOTH')
 
     self.tracker.initialize_graphics()
